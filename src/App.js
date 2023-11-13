@@ -1,7 +1,18 @@
 import './App.css'; 
 import Cabecalho from './componentes/header/header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+ function App(){
   return (
     <div>
       <div className="container-fluid">
