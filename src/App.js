@@ -1,36 +1,32 @@
+import React from 'react';
 import './App.css'; 
+import Login from './pages/login';
+
 import Cabecalho from './componentes/header/header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import Home from './componentes/home/Home';
+import Pagina404 from './pages/404';
+import CadUsu from './pages/usuarios';
+import ListUsu from './pages/usuarios2';
+
+
 
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
-        <Route />
-      </Routes>
+      <div>
+       
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='*' element={<Pagina404 />} />
+          <Route path='/cadusu' element={<CadUsu />} />
+          <Route path='/listusu' element={<ListUsu />} />
+          <Route path='/login' element={<Login />} />
+        
+        </Routes>
+      </div>
     </BrowserRouter>
-  );
-}
-
- function App(){
-  return (
-    <div>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-2">
-            <h1>PetGo</h1>
-          </div>
-          <div className="col-10">
-            <Cabecalho />
-          </div>
-        </div>
-      </div>
-      <div className="container">
-        <div className="App">
-          <p>Conteúdo da página aqui.</p>
-        </div>
-      </div>
-    </div>
   );
 }
 
