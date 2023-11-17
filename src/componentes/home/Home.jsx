@@ -12,24 +12,24 @@ function home () {
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="#">
-                    Link
+                    Cadastro
                 </a>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="#">
-                    Another Link
+                    Animais
                 </a>
             </li>
         </ul>
         <form className="form-inline my-2 my-lg-0 alncentraliza">
             <input
                 className="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
+                type="Pesquisar"
+                placeholder="Pesquisar"
+                aria-label="Pesquisar"
             />
             <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-                Search
+                Pesquisar
             </button>
         </form>
     </div>

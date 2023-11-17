@@ -2,20 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import './NavBar.css';
 
-const Login = () => {
-  const navigate = useNavigate();
 
-  function handleClick() {
-    console.log('Faz o login');
-    navigate('/');
-  }
-
-  return (
-    <div>
-      <button onClick={handleClick}>Login</button>
-    </div>
-  );
-};
 
 function Cabecalho() {
   return (
@@ -35,7 +22,7 @@ function Cabecalho() {
           </li>
           <li className="nav-item">
             <a className="nav-link" href="#">
-              Another Link
+              Animais
             </a>
           </li>
         </ul>
@@ -47,7 +34,7 @@ function Cabecalho() {
             aria-label="Search"
           />
           <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
+            Pesquisar
           </button>
         </form>
       </div>

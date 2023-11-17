@@ -1,6 +1,7 @@
 import React from 'react';
-import './App.css'; 
 import Login from './pages/login';
+import './App.css'; 
+
 
 import Cabecalho from './componentes/header/header';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -18,11 +19,12 @@ function App() {
       <div>
        
         <Routes>
+        <Route path='/login' element={<Login />} />
           <Route path='/' element={<Home />} />
           <Route path='*' element={<Pagina404 />} />
           <Route path='/cadusu' element={<CadUsu />} />
           <Route path='/listusu' element={<ListUsu />} />
-          <Route path='/login' element={<Login />} />
+          
         
         </Routes>
       </div>
