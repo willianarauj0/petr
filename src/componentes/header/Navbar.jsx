@@ -1,28 +1,16 @@
-// Importe o Link do react-router-dom
+// Certifique-se de importar o Link do react-router-dom
 import { Link } from 'react-router-dom';
 
-function Home() {
+function NavBar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="collapse navbar-collapse alinhamento" id="navbarNav">
-        <ul className="navbar-nav ml-auto alinhamento nav">
-          {/* Use o componente Link para realizar a navegação para o perfil */}
-          <li className="nav-item active">
+        <ul className="navbar-nav ml-auto alinhamento">
+          
+          <li className="nav-item">
             <Link to="/perfil" className="nav-link">
               Perfil
             </Link>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-            <Link to="/Petshop" className="nav-link">
-              PetShop
-              </Link>
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#">
-              Veterinarios
-            </a>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0 alncentraliza">
@@ -41,4 +29,4 @@ function Home() {
   );
 }
 
-export default Home;
+export default NavBar;

@@ -1,29 +1,39 @@
+// Cabecalho.js
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import './NavBar.css';
 
-
-
 function Cabecalho() {
+  const navigate = useNavigate();
+
+  const handlePerfilClick = () => {
+    // Adicione o caminho para a página de perfil
+    navigate('/Perfil');
+  };
+
   return (
-    
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="collapse navbar-collapse alinhamento" id="navbarNav">
         <ul className="navbar-nav ml-auto alinhamento nav">
           <li className="nav-item active">
-            <a className="nav-link" href="#">
+            <Link to="/" className="nav-link">
               Home
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link to="/link" className="nav-link">
               Link
-            </a>
+            </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link to="/animais" className="nav-link">
               Animais
-            </a>
+            </Link>
+          </li>
+          <li className="nav-item">
+            <button className="nav-link" onClick={handlePerfilClick}>
+              Perfil
+            </button>
           </li>
         </ul>
         <form className="form-inline my-2 my-lg-0 alncentraliza">
