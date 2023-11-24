@@ -1,0 +1,74 @@
+/* Login.css */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgba(134, 236, 16, 0.337); /* Cor desejada para o fundo da tela toda */
+  color: #000000; /* Cor do texto para melhor legibilidade */
+  font-family: Arial, sans-serif; /* Adicione uma fonte padrão para o texto */
+}
+
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ff1212;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.048);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+button {
+  background-color: #007bffa2;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #315881;
+}
+
+.color-picker {
+  margin-top: 16px;
+}
+
+.color-picker label {
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.color-picker input {
+  width: 100%;
+  appearance: none;
+  padding: 0;
+  border: none;
+  height: 24px;
+}
+.elemento {
+  width: 305.471px;
+  height: 304.341px;
+  flex-shrink: 0;
+}

@@ -1,12 +1,14 @@
 // src/components/pages/Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import './login.css';
 
 const Login = () => {
   const navigate = useNavigate();
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [backgroundColor, setBackgroundColor] = useState('#B7CFDE');
 
   const handleLogin = () => {
     // Autenticação simulada
@@ -21,11 +23,11 @@ const Login = () => {
   };
 
   return (
-    <div>
+    <div className="login-container" style={{ backgroundColor: backgroundColor }}>
       {isLoggedIn ? (
         <p>Redirecionando...</p>
       ) : (
-        <div>
+        <div className="login-form">
           <h2>Login</h2>
           <form>
             <label>
@@ -53,6 +55,8 @@ const Login = () => {
             <button type="button" onClick={handleCadastroClick}>
               Cadastro
             </button>
+            <div className="color-picker">
+            </div>
           </form>
         </div>
       )}
