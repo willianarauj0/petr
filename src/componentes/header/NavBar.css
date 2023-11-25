@@ -1,13 +1,14 @@
 .navbar {
-  background-color: #f07705;
+  background-color: rgba(1, 94, 215, 0.641);
   padding: 10px;
   color: rgb(51, 40, 40);
   text-align: center;
-  position: fixed;
-  width: 98.5%;
+  width: 100%;
   top: 0;
   left: 0; /* Certifica-se de que a navbar está alinhada à esquerda */
-  z-index: 1000; /* Ajusta o z-index para garantir que a navbar esteja acima de outros elementos */
+  z-index: 1000;
+  box-sizing: border-box;
+  /* Ajusta o z-index para garantir que a navbar esteja acima de outros elementos */
 }
 
 
@@ -24,6 +25,23 @@ body {
 
 .navbar a:hover {
   color: #66b2ff; /* Cor ao passar o mouse sobre os links */
+}
+
+.form-inline{
+  margin: 12px; 
+  box-sizing: border-box;
+  gap: 10px;
+}
+
+.form-inline .btn {
+  background-color: #38B6FF; /* Cor de fundo */
+  color: #fff; 
+  border: none; 
+  outline: none;
+  cursor: pointer;
+  &:hover {background-color: #a0c3d8;} 
+  transition: background-color 0.3s; 
+  /* Cor do texto */
 }
 
 /* Adicione estilos adicionais conforme necessário */

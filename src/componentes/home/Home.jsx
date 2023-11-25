@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
-
+import "./Home.css"
+import logo from "./Logo.svg"
 function Home() {
   return (
     <div>
@@ -37,8 +38,7 @@ function Home() {
       </nav>
       {/* Elementos abaixo da barra de navegação */}
       <div className="container">
-        <h1>PetGo</h1>
-        <p>PetGo</p>
+        <div className="logo"><img src={logo} alt="" /></div>
       </div>
     </div>
   );

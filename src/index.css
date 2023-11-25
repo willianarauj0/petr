@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(228, 227, 227);
+  background-color: white;
 }
 
 h1 {
@@ -20,7 +20,3 @@ form-inline .form-control {
   margin-right: 10px; /* Espaçamento entre o campo de pesquisa e o botão */
 }
 
-.form-inline .btn {
-  background-color: #28a745; /* Cor de fundo */
-  color: #fff; /* Cor do texto */
-}
