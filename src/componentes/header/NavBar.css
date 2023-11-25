@@ -12,8 +12,7 @@
 
 
 body {
-  margin: 0; /* Remove a margem padrão do corpo */
-  padding-top: 50px; /* Adiciona um espaço acima do conteúdo para acomodar a navbar fixa */
+  margin: 0; /* Remove a margem padrão do corpo */ /* Adiciona um espaço acima do conteúdo para acomodar a navbar fixa */
 }
 
 .navbar a {

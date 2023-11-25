@@ -1,7 +1,48 @@
-// src/components/pages/Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './login.css';
+import styled from 'styled-components';
+
+const StyledLoginContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: ${(props) => props.backgroundColor};
+`;
+
+const StyledLoginForm = styled.div`
+  width: 300px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ff1212;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.048);
+`;
+
+const StyledLabel = styled.label`
+  display: block;
+  margin-bottom: 8px;
+  text-align: left;
+`;
+
+const StyledInput = styled.input`
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+`;
+
+const StyledButton = styled.button`
+  background-color: #007bffa2;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #315881;
+  }
+`;
 
 const Login = () => {
   const navigate = useNavigate();
@@ -23,44 +64,43 @@ const Login = () => {
   };
 
   return (
-    <div className="login-container" style={{ backgroundColor: backgroundColor }}>
+    <StyledLoginContainer backgroundColor={backgroundColor}>
       {isLoggedIn ? (
         <p>Redirecionando...</p>
       ) : (
-        <div className="login-form">
+        <StyledLoginForm>
           <h2>Login</h2>
           <form>
-            <label>
+            <StyledLabel>
               Nome de usuário:
-              <input
+              <StyledInput
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
-            </label>
+            </StyledLabel>
             <br />
-            <label>
+            <StyledLabel>
               Senha:
-              <input
+              <StyledInput
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-            </label>
+            </StyledLabel>
             <br />
-            <button type="button" onClick={handleLogin}>
+            <StyledButton type="button" onClick={handleLogin}>
               Login
-            </button>
+            </StyledButton>
             <br />
-            <button type="button" onClick={handleCadastroClick}>
+            <StyledButton type="button" onClick={handleCadastroClick}>
               Cadastro
-            </button>
-            <div className="color-picker">
-            </div>
+            </StyledButton>
+            <div className="color-picker">{/* Adicione a lógica para a escolha da cor aqui */}</div>
           </form>
-        </div>
+        </StyledLoginForm>
       )}
-    </div>
+    </StyledLoginContainer>
   );
 };
 
