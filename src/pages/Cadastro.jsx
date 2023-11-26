@@ -2,8 +2,11 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
+import "./Cadastro.css"
 
 // Criar um componente estilizado para o formulário
+ 
+// Estilizar o formulário
 const Form = styled.form`
   max-width: 400px;
   margin: 0 auto;
@@ -22,7 +25,7 @@ const Input = styled.input`
 `;
 
 const Button = styled.button`
-  background-color: #4caf50;
+  background-color: #38B6ff;
   color: #fff;
   padding: 10px 15px;
   border: none;
@@ -30,7 +33,10 @@ const Button = styled.button`
   cursor: pointer;
 
   &:hover {
-    background-color: #45a049;
+    background-color: white;
+    color: #38B6ff;
+    border: 2px solid #38B6ff;
+    
   }
 `;
 
@@ -38,6 +44,7 @@ const CadastroContainer = styled.div`
   text-align: center;
   margin-top: 50px;
 `;
+
 
 const Cadastro = () => {
   const navigate = useNavigate();
@@ -57,30 +64,33 @@ const Cadastro = () => {
 
   return (
     <CadastroContainer>
-      <h2>Cadastro</h2>
+      <h3>Cadastro</h3>
       <Form>
         <Label>
-          Nome de usuário:
+          <p>Nome de usuário:</p>
           <Input
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
+            placeholder= "Insira seu nome de usuário"
           />
         </Label>
         <Label>
-          E-mail:
+          <p>E-mail:</p>
           <Input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            placeholder="Insira seu e-mail"
           />
         </Label>
         <Label>
-          Senha:
+          <p>Senha:</p>
           <Input
             type="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            placeholder="Insira sua senha"
           />
         </Label>
         <Button type="button" onClick={handleCadastro}>

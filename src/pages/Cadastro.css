@@ -1,0 +1,37 @@
+p{
+  background-color: white;
+  padding: 10px;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h3{
+  background-color:#38B6ff;
+  color: white;
+  padding: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+input{
+  border: 1px solid grey;
+  padding: 5px 0;
+}
+
+label{
+  display: block;
+  margin: 10px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"]{
+  width: 100%;
+}
+
+.form{
+  padding:30px;
+}
+  
