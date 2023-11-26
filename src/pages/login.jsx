@@ -8,7 +8,7 @@ const Login = () => {
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [backgroundColor, setBackgroundColor] = useState('#B7CFDE');
+  const [backgroundColor, setBackgroundColor] = useState('#BADBD5');
 
   const handleLogin = () => {
     // Autenticação simulada
@@ -22,8 +22,11 @@ const Login = () => {
     navigate('/cadastro');
   };
 
+  // Aplicar a cor de fundo diretamente ao body
+  document.body.style.backgroundColor = backgroundColor;
+
   return (
-    <div className="login-container" style={{ backgroundColor: backgroundColor }}>
+    <div className="login-container">
       {isLoggedIn ? (
         <p>Redirecionando...</p>
       ) : (
@@ -49,14 +52,13 @@ const Login = () => {
             </label>
             <br />
             <button type="button" onClick={handleLogin}>
-              Login
+              Entrar
             </button>
             <br />
             <button type="button" onClick={handleCadastroClick}>
               Cadastro
             </button>
-            <div className="color-picker">
-            </div>
+            
           </form>
         </div>
       )}

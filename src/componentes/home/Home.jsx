@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import Logo from './Logo';
 
 function Home() {
   return (
@@ -22,22 +23,12 @@ function Home() {
               </a>
             </li>
           </ul>
-          <form className="form-inline my-2 my-lg-0 alncentraliza">
-            <input
-              className="form-control mr-sm-2"
-              type="Pesquisar"
-              placeholder="Pesquisar"
-              aria-label="Pesquisar"
-            />
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Pesquisar
-            </button>
-          </form>
+          
         </div>
       </nav>
       {/* Elementos abaixo da barra de navegação */}
       <div className="container">
-        <h1>PetGo</h1>
+        <h1>Olá Willian!</h1>
         <p>PetGo</p>
       </div>
     </div>
