@@ -31,6 +31,7 @@ function Home() {
       <div className="container">
         <h1>Olá Willian!</h1>
         <p>PetGo</p>
+        <p>Att</p>
         <MeuSvg />  {/* Adicionando o componente SVG */}
       </div>
     </div>
