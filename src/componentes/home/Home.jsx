@@ -1,5 +1,6 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-import Logo from './Logo';
+import MeuSvg from './SVG';  // Certifique-se de ter o caminho correto para o arquivo
 
 function Home() {
   return (
@@ -23,13 +24,14 @@ function Home() {
               </a>
             </li>
           </ul>
-          
         </div>
       </nav>
+
       {/* Elementos abaixo da barra de navegação */}
       <div className="container">
         <h1>Olá Willian!</h1>
         <p>PetGo</p>
+        <MeuSvg />  {/* Adicionando o componente SVG */}
       </div>
     </div>
   );

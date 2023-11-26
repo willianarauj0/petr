@@ -31,7 +31,8 @@ const Login = () => {
         <p>Redirecionando...</p>
       ) : (
         <div className="login-form">
-          <h2>Login</h2>
+          <h2>Tudo que seu pet prescisa</h2>
+          <h1>PetGo</h1>
           <form>
             <label>
               Nome de usuário:
