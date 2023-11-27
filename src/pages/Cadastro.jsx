@@ -43,7 +43,7 @@ const Cadastro = () => {
     <CadastroContainer>
       <h3>Cadastro</h3>
       <Form>
-        <Label>
+        <label>
           <p>Nome de usuário:</p>
           <Input
             type="text"
@@ -60,8 +60,8 @@ const Cadastro = () => {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Insira seu e-mail"
           />
-        </Label>
-        <Label>
+        </label>
+        <label>
           <p>Senha:</p>
           <Input
             type="password"
@@ -69,7 +69,7 @@ const Cadastro = () => {
             onChange={(e) => setPassword(e.target.value)}
             placeholder="Insira sua senha"
           />
-        </Label>
+        </label>
         <Button type="button" onClick={handleCadastro}>
           Cadastrar
         </Button>

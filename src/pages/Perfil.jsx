@@ -1,22 +1,30 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-import Nav from '../componentes/header/Navbar';
-
-
-
+import './Perfil.css';
+import MeuSvg from './Logo.svg';
 
 const Perfil = () => {
   return (
-    <div>
-      
-      <h2>Página de Perfil</h2>
-      {/* Conteúdo do perfil aqui */}
-      <Link to="/home">
-        <button>voltar</button>
-      </Link>
+    <div className="profile-container">
+      <div className="profile-header">
+        <h1>PetShop Profile</h1>
+      </div>
+      <div className="profile-content">
+        <img
+          className="profile-picture"
+          src={MeuSvg}
+          alt="PetShop Logo"
+        />
+        <div className="profile-details">
+          <input type="text" value="PetGo"  />
+          <input type="text" value="Rua Clementino Ferreira, 123"  />
+          <input type="text" value="+55 14 988877524" />
+          <p>Email: petshop@example.com</p>
+        </div>
+      </div>
     </div>
   );
 };
+
+
 
 export default Perfil;
