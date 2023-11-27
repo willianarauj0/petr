@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import MeuSvg from './SVG';  // Certifique-se de ter o caminho correto para o arquivo
 
+
 function Home() {
   return (
     <div>
@@ -30,8 +31,12 @@ function Home() {
       {/* Elementos abaixo da barra de navegação */}
       <div className="container">
         <h1>Olá Willian!</h1>
-        <p>PetGo</p>
-        <p>Att</p>
+        <p>Atualmente você está em...</p>
+        <p>Pompéia
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="21" viewBox="0 0 37 21" fill="none" style={{ margin: '0 70px' }}>
+  <path d="M4.3475 0L18.5 12.9798L32.6525 0L37 3.99595L18.5 21L0 3.99595L4.3475 0Z" fill="#362B4B"/>
+</svg>
+        </p>
         <MeuSvg />  {/* Adicionando o componente SVG */}
       </div>
     </div>
