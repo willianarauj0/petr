@@ -18,9 +18,9 @@ function Nav () {
             </Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="#">
+            <Link to="/Veterinario" className="nav-link">
               Veterinarios
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

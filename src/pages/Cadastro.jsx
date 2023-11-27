@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import './Cadastro.css';
+import './Cadastro';
 
 const CadastroContainer = styled.div`
   /* Estilos do container do cadastro */

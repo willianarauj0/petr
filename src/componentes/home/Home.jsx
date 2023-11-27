@@ -20,9 +20,9 @@ function Home() {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link to="/Veterinario" className="nav-link">
                 Veterinarios
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -37,6 +37,7 @@ function Home() {
   <path d="M4.3475 0L18.5 12.9798L32.6525 0L37 3.99595L18.5 21L0 3.99595L4.3475 0Z" fill="#362B4B"/>
 </svg>
         </p>
+       
         <MeuSvg />  {/* Adicionando o componente SVG */}
       </div>
     </div>
