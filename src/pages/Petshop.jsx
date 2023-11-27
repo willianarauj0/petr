@@ -15,21 +15,31 @@ const PetShop = () => {
     
     { id: 2, name: 'Brinquedo Mordedor Nylon', price: 15, imageUrl: 'link_para_imagem2.jpg' },
     { id: 3, name: 'Brinquedo Kroco ', price: 10, imageUrl: 'link_para_imagem3.jpg' },
-    
-
-    // Adicione mais produtos conforme necessário
   ]);
+
+  const handleAddToCart = (productName) => {
+    alert(`Adicionado ao carrinho: ${productName}`);
+  };
+
+  const handleGoHome = () => {
+    // Adicione lógica de navegação para a página inicial, se necessário
+    // Por exemplo, se estiver usando o React Router, você pode usar history.push('/')
+    // Ou, simplesmente, você pode redirecionar o usuário para a página inicial usando window.location.href = '/'
+    alert('Redirecionando para a página inicial');
+  };
 
   return (
     <div className="petshop-gallery">
       <h1>Bem-vindo À Nossa Loja Pet Feliz!</h1>
+      <button className="go-home-btn" onClick={handleGoHome}>
+        Voltar para Home
+      </button>
       <div className="product-gallery">
         {products.map((product) => (
           <div key={product.id} className="product-card">
-           
             <h3>{product.name}</h3>
             <p className="product-price">R$ {product.price.toFixed(2)}</p>
-            <button className="add-to-cart-btn" onClick={() => alert(`Adicionado ao carrinho: ${product.name}`)}>
+            <button className="add-to-cart-btn" onClick={() => handleAddToCart(product.name)}>
               Adicionar ao Carrinho
             </button>
           </div>
