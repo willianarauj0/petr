@@ -17,6 +17,7 @@
   margin: 10px;
   text-align: center;
   background-color: #f9f9f9;
+  white-space: nowrap;
 }
 
 .product-image {
@@ -30,16 +31,104 @@
 }
 
 .add-to-cart-btn {
-  background-color: #4caf50;
+  background-color:#38b6ff;
   color: #fff;
-  padding: 8px 16px;
-  border: none;
+  padding: 4px 8px;
+  border: 2px solid #38b6ff;
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s;
+  width: 100%;
 }
 
 .add-to-cart-btn:hover {
   background-color: #45a049;
 }
+
+/* Adicione ao seu arquivo Petshop.css */
+
+.petshop-gallery {
+  text-align: center;
+  padding: 20px;
+}
+
+.product-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #333;
+  margin: 10px 0;
+}
+
+.add-to-cart-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #45a049;
+}
+
+h3{
+  font-size: 16px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Adicione ao seu arquivo Petshop.css */
+
+.add-to-cart-btn {
+  background-color: #fff;
+  color: black;
+  padding: 10px 20px;
+  border: 2px solid #38b6ff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s, color 0.3s;
+  width: 100%;
+  outline: none; /* Remova a borda do botão quando estiver focado */
+}
+
+.add-to-cart-btn:hover {
+  background-color: #fff;
+  color: #38b6ff;
+}
+
+.add-to-cart-btn:active {
+  background-color: #3871b1;
+}
+
+.add-to-cart-btn:focus {
+  box-shadow: 0 0 0 2px #38b6ff;
+}
+
+/* Adicione estilos específicos para o botão quando estiver desabilitado */
+.add-to-cart-btn:disabled {
+  background-color: #ccc;
+  border-color: #ccc;
+  color: #666;
+  cursor: not-allowed;
+}
+
+/* Adicione ao seu arquivo Petshop.css */
