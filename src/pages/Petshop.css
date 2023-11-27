@@ -42,10 +42,6 @@
   width: 100%;
 }
 
-.add-to-cart-btn:hover {
-  background-color: #45a049;
-}
-
 /* Adicione ao seu arquivo Petshop.css */
 
 .petshop-gallery {
@@ -85,9 +81,6 @@
   cursor: pointer;
 }
 
-.add-to-cart-btn:hover {
-  background-color: #45a049;
-}
 
 h3{
   font-size: 16px;
