@@ -1,50 +1,27 @@
-// src/components/pages/Cadastro.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
-import "./Cadastro.css"
+import './Cadastro.css';
 
-// Criar um componente estilizado para o formulário
- 
-// Estilizar o formulário
-const Form = styled.form`
-  max-width: 400px;
-  margin: 0 auto;
+const CadastroContainer = styled.div`
+  /* Estilos do container do cadastro */
 `;
 
-// Estilizar o rótulo e o campo de entrada
+const Form = styled.form`
+  /* Estilos do formulário */
+`;
+
 const Label = styled.label`
-  display: block;
-  margin-bottom: 10px;
+  /* Estilos do rótulo */
 `;
 
 const Input = styled.input`
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 15px;
+  /* Estilos do campo de entrada */
 `;
 
 const Button = styled.button`
-  background-color: #38B6ff;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: white;
-    color: #38B6ff;
-    border: 2px solid #38B6ff;
-    
-  }
+  /* Estilos do botão */
 `;
-
-const CadastroContainer = styled.div`
-  text-align: center;
-  margin-top: 50px;
-`;
-
 
 const Cadastro = () => {
   const navigate = useNavigate();
@@ -72,12 +49,12 @@ const Cadastro = () => {
             type="text"
             value={username}
             onChange={(e) => setUsername(e.target.value)}
-            placeholder= "Insira seu nome de usuário"
           />
-        </Label>
-        <Label>
+        </label>
+        <br />
+        <label>
           <p>E-mail:</p>
-          <Input
+          <input
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}

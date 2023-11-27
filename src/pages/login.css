@@ -1,18 +1,19 @@
 /* Login.css */
 
-body {
+body.login-page {
   margin: 0;
   padding: 0;
-  background-color: rgba(134, 236, 16, 0.337); /* Cor desejada para o fundo da tela toda */
-  color: #000000; /* Cor do texto para melhor legibilidade */
-  font-family: Arial, sans-serif; /* Adicione uma fonte padrão para o texto */
+  background-color: rgba(39, 115, 145, 0.337);
+  color: #000000;
+  font-family: Arial, sans-serif;
+  /* Outros estilos específicos da página de login */
 }
 
 
 .login-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   height: 100vh;
 }
 
@@ -20,7 +21,7 @@ body {
   width: 300px;
   text-align: center;
   padding: 20px;
-  border: 1px solid #ff1212;
+  border: 0px solid #272525;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.048);
 }
@@ -40,10 +41,11 @@ input {
 button {
   background-color: #007bffa2;
   color: #fff;
-  padding: 10px;
+  padding: 12px;
   border: none;
-  border-radius: 4px;
+  border-radius: 77px;
   cursor: pointer;
+  margin: 10px;
 }
 
 button:hover {
@@ -72,3 +74,5 @@ button:hover {
   height: 304.341px;
   flex-shrink: 0;
 }
+
+

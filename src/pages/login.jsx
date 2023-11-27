@@ -1,55 +1,14 @@
+// src/components/pages/Login.js
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import styled from 'styled-components';
-
-const StyledLoginContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: ${(props) => props.backgroundColor};
-`;
-
-const StyledLoginForm = styled.div`
-  width: 300px;
-  text-align: center;
-  padding: 20px;
-  border: 1px solid #ff1212;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.048);
-`;
-
-const StyledLabel = styled.label`
-  display: block;
-  margin-bottom: 8px;
-  text-align: left;
-`;
-
-const StyledInput = styled.input`
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-`;
-
-const StyledButton = styled.button`
-  background-color: #007bffa2;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-  &:hover {
-    background-color: #315881;
-  }
-`;
+import './login.css';
 
 const Login = () => {
   const navigate = useNavigate();
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [backgroundColor, setBackgroundColor] = useState('#B7CFDE');
+  const [backgroundColor, setBackgroundColor] = useState('#BADBD5');
 
   const handleLogin = () => {
     // Autenticação simulada
@@ -63,44 +22,48 @@ const Login = () => {
     navigate('/cadastro');
   };
 
+  // Aplicar a cor de fundo diretamente ao body
+  document.body.style.backgroundColor = backgroundColor;
+
   return (
-    <StyledLoginContainer backgroundColor={backgroundColor}>
+    <div className="login-container">
       {isLoggedIn ? (
         <p>Redirecionando...</p>
       ) : (
-        <StyledLoginForm>
-          <h2>Login</h2>
+        <div className="login-form">
+          <h2>Tudo que seu pet prescisa</h2>
+          <h1>PetGo</h1>
           <form>
-            <StyledLabel>
+            <label>
               Nome de usuário:
-              <StyledInput
+              <input
                 type="text"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
               />
-            </StyledLabel>
+            </label>
             <br />
-            <StyledLabel>
+            <label>
               Senha:
-              <StyledInput
+              <input
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
-            </StyledLabel>
+            </label>
             <br />
-            <StyledButton type="button" onClick={handleLogin}>
-              Login
-            </StyledButton>
+            <button type="button" onClick={handleLogin}>
+              Entrar
+            </button>
             <br />
-            <StyledButton type="button" onClick={handleCadastroClick}>
+            <button type="button" onClick={handleCadastroClick}>
               Cadastro
-            </StyledButton>
-            <div className="color-picker">{/* Adicione a lógica para a escolha da cor aqui */}</div>
+            </button>
+            
           </form>
-        </StyledLoginForm>
+        </div>
       )}
-    </StyledLoginContainer>
+    </div>
   );
 };
 

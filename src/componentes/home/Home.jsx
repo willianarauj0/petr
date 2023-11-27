@@ -1,6 +1,7 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-import "./Home.css"
-import logo from "./Logo.svg"
+import MeuSvg from './SVG';  // Certifique-se de ter o caminho correto para o arquivo
+
 function Home() {
   return (
     <div>
@@ -23,22 +24,15 @@ function Home() {
               </a>
             </li>
           </ul>
-          <form className="form-inline my-2 my-lg-0 alncentraliza">
-            <input
-              className="form-control mr-sm-2"
-              type="Pesquisar"
-              placeholder="Pesquisar"
-              aria-label="Pesquisar"
-            />
-            <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Pesquisar
-            </button>
-          </form>
         </div>
       </nav>
+
       {/* Elementos abaixo da barra de navegação */}
       <div className="container">
-        <div className="logo"><img src={logo} alt="" /></div>
+        <h1>Olá Willian!</h1>
+        <p>PetGo</p>
+        <p>Att</p>
+        <MeuSvg />  {/* Adicionando o componente SVG */}
       </div>
     </div>
   );

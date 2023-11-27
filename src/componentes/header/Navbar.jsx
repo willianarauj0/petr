@@ -1,32 +1,67 @@
-// Certifique-se de importar o Link do react-router-dom
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import {
+  MDBNavbar,
+  MDBContainer,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBNavbarToggler,
+  MDBCollapse,
+  MDBDropdown,
+  MDBDropdownMenu,
+  MDBDropdownToggle,
+  MDBDropdownItem,
+} from 'mdb-react-ui-kit';
 
-function NavBar() {
+export default function App() {
+  const [openNavRight, setOpenNavRight] = useState(false);
+
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="collapse navbar-collapse alinhamento" id="navbarNav">
-        <ul className="navbar-nav ml-auto alinhamento">
-          
-          <li className="nav-item">
-            <Link to="/perfil" className="nav-link">
-              Perfil
-            </Link>
-          </li>
-        </ul>
-        <form className="form-inline my-2 my-lg-0 alncentraliza">
-          <input
-            className="form-control mr-sm-2"
-            type="Pesquisar"
-            placeholder="Pesquisar"
-            aria-label="Pesquisar"
-          />
-          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Pesquisar
-          </button>
-        </form>
-      </div>
-    </nav>
+    <MDBNavbar expand='lg' light bgColor='light'>
+      <MDBContainer fluid>
+        <MDBNavbarToggler
+          type='button'
+          data-target='#navbarRightAlignExample'
+          aria-controls='navbarRightAlignExample'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setOpenNavRight(!openNavRight)}
+        >
+          <MDBIcon icon='bars' fas />
+        </MDBNavbarToggler>
+
+        <MDBCollapse navbar open={openNavRight}>
+          <MDBNavbarNav right fullWidth={false} className='mb-2 mb-lg-0'>
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' href='#'>
+                Home
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink href='#'>Link</MDBNavbarLink>
+            </MDBNavbarItem>
+
+            <MDBNavbarItem>
+              <MDBDropdown>
+                <MDBDropdownToggle tag='a' className='nav-link'>
+                  Dropdown
+                </MDBDropdownToggle>
+                <MDBDropdownMenu>
+                  <MDBDropdownItem link>Action</MDBDropdownItem>
+                  <MDBDropdownItem link>Another action</MDBDropdownItem>
+                  <MDBDropdownItem link>Something else here</MDBDropdownItem>
+                </MDBDropdownMenu>
+              </MDBDropdown>
+            </MDBNavbarItem>
+            <MDBNavbarItem>
+              <MDBNavbarLink disabled href='#' tabIndex={-1} aria-disabled='true'>
+                Disabled
+              </MDBNavbarLink>
+            </MDBNavbarItem>
+          </MDBNavbarNav>
+        </MDBCollapse>
+      </MDBContainer>
+    </MDBNavbar>
   );
 }
-
-export default NavBar;

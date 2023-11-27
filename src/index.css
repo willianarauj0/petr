@@ -1,15 +1,13 @@
 body {
-  background-color: white;
+  padding: 77px;
+  background-color: rgb(228, 227, 227);
 }
 
 h1 {
   color: black;
 }
 
-p {
-  background-color: rgb(121, 121, 121);
-  padding: 10px;
-}
+
 
 .navbar {
   background-color: #f8f9fa; /* Cor de fundo */
@@ -20,3 +18,7 @@ form-inline .form-control {
   margin-right: 10px; /* Espaçamento entre o campo de pesquisa e o botão */
 }
 
+.form-inline .btn {
+  background-color: #28a745; /* Cor de fundo */
+  color: #fff; /* Cor do texto */
+}
