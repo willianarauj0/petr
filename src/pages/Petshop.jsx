@@ -13,8 +13,8 @@ const PetShop = () => {
     { id: 7, name: 'Ração Origens', price: 30, imageUrl: 'link_para_imagem1.jpg' },
     { id: 8, name: 'Coleira Para Gatos', price: 25, imageUrl: 'link_para_imagem3.jpg' },
     
-    { id: 2, name: 'Brinquedo Mordedor Nylon', price: 15, imageUrl: 'link_para_imagem2.jpg' },
-    { id: 3, name: 'Brinquedo Kroco ', price: 10, imageUrl: 'link_para_imagem3.jpg' },
+    { id: 9, name: 'Brinquedo Mordedor Nylon', price: 15, imageUrl: 'link_para_imagem2.jpg' },
+    { id: 10, name: 'Brinquedo Kroco ', price: 10, imageUrl: 'link_para_imagem3.jpg' },
   ]);
 
   const handleAddToCart = (productName) => {
