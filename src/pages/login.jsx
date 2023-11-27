@@ -3,12 +3,15 @@ import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './login.css';
 
+
+
+
 const Login = () => {
   const navigate = useNavigate();
   const [isLoggedIn, setLoggedIn] = useState(false);
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [backgroundColor, setBackgroundColor] = useState('#BADBD5');
+  const [backgroundColor, setBackgroundColor] = useState('#fff');
 
   const handleLogin = () => {
     // Autenticação simulada
@@ -31,11 +34,11 @@ const Login = () => {
         <p>Redirecionando...</p>
       ) : (
         <div className="login-form">
-          <h2>Tudo que seu pet prescisa</h2>
+          <h3>Tudo que seu pet prescisa</h3>
           <h1>PetGo</h1>
           <form>
             <label>
-              Nome de usuário:
+            Login:
               <input
                 type="text"
                 value={username}
@@ -52,11 +55,11 @@ const Login = () => {
               />
             </label>
             <br />
-            <button type="button" onClick={handleLogin}>
+            <button type="login-button" onClick={handleLogin}>
               Entrar
             </button>
             <br />
-            <button type="button" onClick={handleCadastroClick}>
+            <button type="login-button" onClick={handleCadastroClick}>
               Cadastro
             </button>
             
