@@ -55,11 +55,11 @@ const Login = () => {
               />
             </label>
             <br />
-            <button type="login-button" onClick={handleLogin}>
+            <button type="login button" onClick={handleLogin}>
               Entrar
             </button>
             <br />
-            <button type="login-button" onClick={handleCadastroClick}>
+            <button type="login button" onClick={handleCadastroClick}>
               Cadastro
             </button>
             

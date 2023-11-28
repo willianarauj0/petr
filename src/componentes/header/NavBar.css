@@ -30,7 +30,7 @@
 }
 
 /* Estilo global do corpo */
-body {
+.navbar body {
   margin: 0; /* Remove a margem padrão do corpo */
   padding-top: 100px; /* Adiciona espaço acima do conteúdo para acomodar a barra de navegação fixa */
 }

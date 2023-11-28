@@ -1,6 +1,7 @@
 import React from 'react';
 import './Perfil.css';
 import MeuSvg from './Logo.svg';
+import Nav from '../componentes/header/Navbar';
 
 const Perfil = () => {
   return (

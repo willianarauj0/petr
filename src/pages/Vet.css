@@ -16,7 +16,7 @@
   .vet-item {
     flex: 0 0 calc(33.33% - 20px); /* Ajuste conforme necessário para o número desejado de itens por linha */
     margin: 10px;
-    background-color: rgba(9, 104, 247, 0.541) ;
+    background-color: rgba(223, 222, 222, 0.404);
     padding: 15px;
     border-radius: 8px;
     cursor: pointer;
@@ -24,7 +24,7 @@
   }
   
   .vet-item:hover {
-    background-color: #72727298;
+    background-color: rgba(15, 103, 236, 0.705) !important; /* Adicione !important para garantir que essa regra tenha prioridade */
   }
   
   .vet-item h4 {
@@ -94,5 +94,29 @@
     background-color: #f0f0f0;
   }
   
+  .time-slots-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
   
+  .time-slot {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
   
+  .time-box {
+    border: 1px solid #ccc;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 22px;
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave de cor de fundo */
+  }
+  
+  .time-box:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .time-slot.selected .time-box {
+    background-color: #a0a0a0; /* Cor de fundo quando marcado */
+  }

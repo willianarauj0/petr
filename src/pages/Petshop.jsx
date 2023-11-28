@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Petshop.css'; // Importa o arquivo de estilos CSS
+import Nav from '../componentes/header/Navbar';
 
 const PetShop = () => {
   const navigate = useNavigate();
@@ -41,6 +42,9 @@ height: '44px',
   };
 
   return (
+    <div>
+      <Nav />
+    
     <div className="petshop-gallery">
       <div className="top-bar">
         <button onClick={handleGoHome} style={backButtonStyle}>
@@ -63,6 +67,7 @@ height: '44px',
           </div>
         ))}
       </div>
+    </div>
     </div>
   );
 };
