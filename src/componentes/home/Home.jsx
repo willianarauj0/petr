@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MeuSvg from './SVG';  // Certifique-se de ter o caminho correto para o arquivo
-
+import Nav from '../header/Navbar';
 
 function Home() {
   return (

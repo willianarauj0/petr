@@ -1,0 +1,98 @@
+/* Vet.css */
+
+.vet-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .vet-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .vet-item {
+    flex: 0 0 calc(33.33% - 20px); /* Ajuste conforme necessário para o número desejado de itens por linha */
+    margin: 10px;
+    background-color: rgba(9, 104, 247, 0.541) ;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vet-item:hover {
+    background-color: #72727298;
+  }
+  
+  .vet-item h4 {
+    margin-top: 0;
+  }
+  
+  .appointment-section {
+    margin-top: 20px;
+  }
+  
+  .scheduled-dates {
+    margin-top: 20px;
+  }
+  
+  .scheduled-dates h3 {
+    margin-bottom: 10px;
+  }
+  
+  .scheduled-dates ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .scheduled-dates li {
+    margin-bottom: 10px;
+  }
+  
+  .scheduled-dates button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .appointment-section select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .scheduled-dates li {
+    margin-bottom: 10px;
+    opacity: 0.7; /* Opacidade reduzida para horários marcados */
+  }
+  
+  .scheduled-dates button {
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #ff4d4f;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
+  .vet-list .vet-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .vet-list .vet-item:hover {
+    background-color: #f0f0f0;
+  }
+  
+  
+  

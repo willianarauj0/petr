@@ -9,8 +9,8 @@ import Login from './pages/login';
 import Cadastro from './pages/Cadastro';
 import Perfil from './pages/Perfil'; 
 import Petshop from './pages/Petshop'; 
-//import NavBar from './componentes/header/Navbar';
-import Vet1 from './pages/Vet';
+import Vet from './pages/Vet';
+
 
 function App() {
   return (
@@ -25,6 +25,7 @@ function App() {
           <Route path='*' element={<Pagina404 />} />
           <Route path='/Perfil' element={<Perfil />} /> 
           <Route path='/Petshop' element={<Petshop />} /> 
+          <Route path='/Vet' element={<Vet />} /> 
         </Routes>
       </div>
     </BrowserRouter>
