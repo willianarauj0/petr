@@ -6,9 +6,9 @@
 /* Estilo da barra de navegação */
 .navbar {
 
-  background-color: #38B6ff;
+  background-color: #1692da75;
   padding: 10px;
-  color: rgb(51, 40, 40);
+  color: #1692da54;
   text-align: center;
   width: 100%;
   top: 0;
@@ -16,16 +16,7 @@
   z-index: 1000;
   box-sizing: border-box;
   /* Ajusta o z-index para garantir que a navbar esteja acima de outros elementos */
-
-  background-color: #cccccc; /* Cor de fundo */
-  padding: 10px; /* Espaçamento interno */
-  color: #cfcfcf; /* Cor do texto */
-  text-align: center; /* Alinhamento do texto */
   position: fixed; /* Barra de navegação fixa na parte superior */
-  width: 100%; /* Largura total */
-  top: 0; /* Posicionamento no topo */
-  left: 0; /* Alinhamento à esquerda */
-  z-index: 1000; /* Ordem de empilhamento */
   display: flex; /* Exibição flexível para alinhamento */
   justify-content: flex-end; /* Alinhamento do conteúdo à direita */
 
@@ -54,7 +45,7 @@ body {
 
 /* Estilo dos links na barra de navegação ao passar o mouse */
 .navbar a:hover {
-  color: rgb(25, 70, 219); /* Cor do texto ao passar o mouse sobre os links */
+  color: rgb(255, 255, 255); /* Cor do texto ao passar o mouse sobre os links */
 }
 
 /* Cria uma linha (borda) abaixo dos links na barra de navegação */
@@ -71,7 +62,7 @@ body {
 }
 
 .form-inline .btn {
-  background-color: #38B6FF; /* Cor de fundo */
+  background-color: #00a2ff; /* Cor de fundo */
   color: #fff; 
   border: 2px solid white; 
   outline: none;
