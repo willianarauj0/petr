@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
@@ -20,7 +20,7 @@ function Nav () {
             </Link>
           </li>
           <li className="nav-item">
-            <Link to="/Veterinario" className="nav-link">
+            <Link to="/Vet" className="nav-link">
               Veterinarios
             </Link>
           </li>

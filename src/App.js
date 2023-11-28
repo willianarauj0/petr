@@ -9,7 +9,8 @@ import Login from './pages/login';
 import Cadastro from './pages/Cadastro';
 import Perfil from './pages/Perfil'; 
 import Petshop from './pages/Petshop'; 
-import NavBar from './componentes/header/Navbar';
+//import NavBar from './componentes/header/Navbar';
+import Vet1 from './pages/Vet';
 
 function App() {
   return (

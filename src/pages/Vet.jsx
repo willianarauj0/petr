@@ -1,6 +1,7 @@
-import React from 'react';
+import React  from 'react';
 
-const Veterinario = () => {
+
+const Vet1 = () => {
   return (
     <div>
       <h2>Página do Veterinário</h2>
@@ -9,4 +10,4 @@ const Veterinario = () => {
   );
 };
 
-export default Veterinario;
+export default Vet1;
